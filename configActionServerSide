@@ -1,0 +1,5754 @@
+{
+  "actions": [
+    {
+      "type": "UNKNOWN",
+      "code": -1,
+      "from": "UNKNOWN",
+      "to": "UNKNOWN",
+      "allowedRoles": []
+    },
+    {
+      "type": "LOGIN",
+      "code": 0,
+      "from": "CLIENT",
+      "to": "LOGIN",
+      "allowedRoles": [
+        "NOT_AUTHORIZED"
+      ]
+    },
+    {
+      "type": "LOGIN_BASED_ON_BISBOG_TOKEN",
+      "code": 45,
+      "from": "CLIENT",
+      "to": "LOGIN",
+      "allowedRoles": [
+        "NOT_AUTHORIZED"
+      ]
+    },
+    {
+      "type": "LOGIN_BASED_ON_GAMEXP_TOKEN",
+      "code": 149,
+      "from": "CLIENT",
+      "to": "LOGIN",
+      "allowedRoles": [
+        "NOT_AUTHORIZED"
+      ]
+    },
+    {
+      "type": "LOGIN_BASED_ON_FACEBOOK_TOKEN",
+      "code": 25,
+      "from": "CLIENT",
+      "to": "LOGIN",
+      "allowedRoles": [
+        "NOT_AUTHORIZED"
+      ]
+    },
+    {
+      "type": "LOGIN_BASED_ON_TWITTER_TOKEN",
+      "code": 35,
+      "from": "CLIENT",
+      "to": "LOGIN",
+      "allowedRoles": [
+        "NOT_AUTHORIZED"
+      ]
+    },
+    {
+      "type": "LOGIN_BASED_ON_IFA_IDENTIFICATOR",
+      "code": 36,
+      "from": "CLIENT",
+      "to": "LOGIN",
+      "allowedRoles": [
+        "NOT_AUTHORIZED"
+      ]
+    },
+    {
+      "type": "LOGIN_BASED_ON_APPLE_GAMECENTER_IDENTIFICATOR",
+      "code": 42,
+      "from": "CLIENT",
+      "to": "LOGIN",
+      "allowedRoles": [
+        "NOT_AUTHORIZED"
+      ]
+    },
+    {
+      "type": "LOGIN_BASED_ON_WEB_SESSION_ID",
+      "code": 41,
+      "from": "CLIENT",
+      "to": "BALANCER",
+      "allowedRoles": [
+        "NOT_AUTHORIZED"
+      ]
+    },
+    {
+      "type": "LOGIN_BASED_ON_IPLAYER_TOKEN",
+      "code": 49,
+      "from": "CLIENT",
+      "to": "LOGIN",
+      "allowedRoles": [
+        "NOT_AUTHORIZED"
+      ]
+    },
+    {
+      "type": "CREATE_USER",
+      "code": 3,
+      "from": "CLIENT",
+      "to": "LOGIN",
+      "allowedRoles": [
+        "GAMER_CREATOR"
+      ]
+    },
+    {
+      "type": "CREATE_BISBOG_USER",
+      "code": 50,
+      "from": "CLIENT",
+      "to": "LOGIN",
+      "allowedRoles": [
+        "GAMER_CREATOR"
+      ]
+    },
+    {
+      "type": "CREATE_FACEBOOK_USER",
+      "code": 51,
+      "from": "CLIENT",
+      "to": "LOGIN",
+      "allowedRoles": [
+        "GAMER_CREATOR"
+      ]
+    },
+    {
+      "type": "CREATE_GAMEXP_USER",
+      "code": 54,
+      "from": "CLIENT",
+      "to": "LOGIN",
+      "allowedRoles": [
+        "GAMER_CREATOR"
+      ]
+    },
+    {
+      "type": "CREATE_TWITTER_USER",
+      "code": 52,
+      "from": "CLIENT",
+      "to": "LOGIN",
+      "allowedRoles": [
+        "GAMER_CREATOR"
+      ]
+    },
+    {
+      "type": "CREATE_IPLAYER_USER",
+      "code": 53,
+      "from": "CLIENT",
+      "to": "LOGIN",
+      "allowedRoles": [
+        "GAMER_CREATOR"
+      ]
+    },
+    {
+      "type": "REGISTER_USER",
+      "code": 26,
+      "from": "CLIENT",
+      "to": "LOGIN",
+      "allowedRoles": [
+        "NOT_AUTHORIZED"
+      ]
+    },
+    {
+      "type": "DELETE_USER",
+      "code": 4,
+      "from": "CLIENT",
+      "to": "LOGIN",
+      "allowedRoles": [
+        "ADMINISTRATION"
+      ]
+    },
+    {
+      "type": "AFTER_CREATE_USER_SETTINGS",
+      "code": 5,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER_CREATOR",
+        "ADMINISTRATION"
+      ]
+    },
+    {
+      "type": "INITIAL_USER_STRUCTURES_CREATION",
+      "code": 8,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER_CREATOR"
+      ]
+    },
+    {
+      "type": "GET_USER_INFO",
+      "code": 10,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER_CREATOR"
+      ]
+    },
+    {
+      "type": "SET_USER_PASSWORD",
+      "code": 11,
+      "from": "CLIENT",
+      "to": "LOGIN",
+      "allowedRoles": [
+        "GAMER_CREATOR"
+      ]
+    },
+    {
+      "type": "DISABLE_USER",
+      "code": 12,
+      "from": "CLIENT",
+      "to": "LOGIN",
+      "allowedRoles": [
+        "GAMER_CREATOR"
+      ]
+    },
+    {
+      "type": "LOGIN_TYPE",
+      "code": 100,
+      "from": "LOGIN",
+      "to": "BALANCER",
+      "allowedRoles": []
+    },
+    {
+      "type": "STATELESS_TYPE",
+      "code": 101,
+      "from": "STATELESS",
+      "to": "BALANCER",
+      "allowedRoles": []
+    },
+    {
+      "type": "STATEFULL_TYPE",
+      "code": 102,
+      "from": "STATEFUL",
+      "to": "BALANCER",
+      "allowedRoles": []
+    },
+    {
+      "type": "BALANCER_TYPE",
+      "code": 105,
+      "from": "BALANCER",
+      "to": "BALANCER",
+      "allowedRoles": []
+    },
+    {
+      "type": "CHAT_TYPE",
+      "code": 106,
+      "from": "CHAT",
+      "to": "BALANCER",
+      "allowedRoles": []
+    },
+    {
+      "type": "LOGIN_HEARTBEAT",
+      "code": 110,
+      "from": "LOGIN",
+      "to": "BALANCER",
+      "allowedRoles": []
+    },
+    {
+      "type": "STATELESS_HEARTBEAT",
+      "code": 111,
+      "from": "STATELESS",
+      "to": "BALANCER",
+      "allowedRoles": []
+    },
+    {
+      "type": "STATEFUL_HEARTBEAT",
+      "code": 112,
+      "from": "STATEFUL",
+      "to": "BALANCER",
+      "allowedRoles": []
+    },
+    {
+      "type": "BALANCER_HEARTBEAT",
+      "code": 115,
+      "from": "BALANCER",
+      "to": "BALANCER",
+      "allowedRoles": []
+    },
+    {
+      "type": "CHAT_HEARTBEAT",
+      "code": 116,
+      "from": "CHAT",
+      "to": "CHAT",
+      "allowedRoles": []
+    },
+    {
+      "type": "AFTER_LOGIN_BALANCER_ACTION",
+      "code": 120,
+      "from": "BALANCER",
+      "to": "BALANCER",
+      "allowedRoles": []
+    },
+    {
+      "type": "DROP_PREVIOUS_CLIENT_CONNECTIONS_ACTION",
+      "code": 121,
+      "from": "BALANCER",
+      "to": "BALANCER",
+      "allowedRoles": []
+    },
+    {
+      "type": "RELOAD_CONFIGURATION",
+      "code": 200,
+      "from": "CLIENT",
+      "to": "BALANCER",
+      "allowedRoles": [
+        "CONFIGURATOR"
+      ]
+    },
+    {
+      "type": "RELOAD_CLIENT_CONFIGURATION",
+      "code": 201,
+      "from": "BALANCER",
+      "to": "CLIENT",
+      "allowedRoles": [
+        "CONFIGURATOR"
+      ]
+    },
+    {
+      "type": "RELOAD_LOGIN_CONFIGURATION",
+      "code": 202,
+      "from": "BALANCER",
+      "to": "LOGIN",
+      "allowedRoles": [
+        "CONFIGURATOR"
+      ]
+    },
+    {
+      "type": "RELOAD_STATELESS_CONFIGURATION",
+      "code": 203,
+      "from": "BALANCER",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "CONFIGURATOR"
+      ]
+    },
+    {
+      "type": "RELOAD_STATEFUL_CONFIGURATION",
+      "code": 204,
+      "from": "BALANCER",
+      "to": "STATEFUL",
+      "allowedRoles": [
+        "CONFIGURATOR"
+      ]
+    },
+    {
+      "type": "RELOAD_CHAT_CONFIGURATION",
+      "code": 205,
+      "from": "BALANCER",
+      "to": "CHAT",
+      "allowedRoles": [
+        "CONFIGURATOR"
+      ]
+    },
+    {
+      "type": "PUSH_CLIENT_TO_RECONNECT",
+      "code": 300,
+      "from": "BALANCER",
+      "to": "CLIENT",
+      "allowedRoles": []
+    },
+    {
+      "type": "GENERAL_CHANGE_NOTIFICATION",
+      "code": 1095,
+      "from": "STATELESS",
+      "to": "CLIENT",
+      "allowedRoles": []
+    },
+    {
+      "type": "MISSION_NOTIFICATION_EXTERNAL_CHANGE",
+      "code": 1310,
+      "from": "STATELESS",
+      "to": "CLIENT",
+      "allowedRoles": []
+    },
+    {
+      "type": "MISSION_NOTIFICATION_INCOMING_ESPIONAGE_RESULTS",
+      "code": 1312,
+      "from": "STATELESS",
+      "to": "CLIENT",
+      "allowedRoles": []
+    },
+    {
+      "type": "MISSION_FINISH_MANUAL_BATTLE",
+      "code": 1371,
+      "from": "STATEFUL",
+      "to": "STATELESS",
+      "allowedRoles": []
+    },
+    {
+      "type": "INTERNAL_MAIL_NOTIFICATION_INCOMING_LETTER",
+      "code": 1511,
+      "from": "STATELESS",
+      "to": "CLIENT",
+      "allowedRoles": []
+    },
+    {
+      "type": "PROFILE_CHECK_ABILITY_TO_UPLOAD_AVATAR",
+      "code": 1605,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "CHARGER"
+      ]
+    },
+    {
+      "type": "PROFILE_COMPLETE_AVATAR_UPLOADING",
+      "code": 1606,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "CHARGER"
+      ]
+    },
+    {
+      "type": "PROFILE_REVERT_CHANGED_EMAIL",
+      "code": 1607,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "CHARGER"
+      ]
+    },
+    {
+      "type": "PROFILE_GIFT_NOTIFICATION",
+      "code": 1620,
+      "from": "STATELESS",
+      "to": "CLIENT",
+      "allowedRoles": []
+    },
+    {
+      "type": "UNION_NOTIFICATION_INPUT_OFFER",
+      "code": 1710,
+      "from": "STATELESS",
+      "to": "CLIENT",
+      "allowedRoles": []
+    },
+    {
+      "type": "UNION_NOTIFICATION_ANSWER_ON_OFFER",
+      "code": 1711,
+      "from": "STATELESS",
+      "to": "CLIENT",
+      "allowedRoles": []
+    },
+    {
+      "type": "UNION_NOTIFICATION_BREAKING",
+      "code": 1712,
+      "from": "STATELESS",
+      "to": "CLIENT",
+      "allowedRoles": []
+    },
+    {
+      "type": "ESPIONAGE_NOTIFICATION_BANISH",
+      "code": 1780,
+      "from": "STATELESS",
+      "to": "CLIENT",
+      "allowedRoles": []
+    },
+    {
+      "type": "ESPIONAGE_NOTIFICATION_OWN_SPIES_EVACUATION",
+      "code": 1781,
+      "from": "STATELESS",
+      "to": "CLIENT",
+      "allowedRoles": []
+    },
+    {
+      "type": "ESPIONAGE_NOTIFICATION_ENEMY_SPIES_EVACUATION",
+      "code": 1783,
+      "from": "STATELESS",
+      "to": "CLIENT",
+      "allowedRoles": []
+    },
+    {
+      "type": "ESPIONAGE_NOTIFICATION_START_SABOTAGE",
+      "code": 1782,
+      "from": "STATELESS",
+      "to": "CLIENT",
+      "allowedRoles": []
+    },
+    {
+      "type": "PREMIUM_SERVICE_NOTIFICATION_AUTO_EXPLORATION_PERFORMED",
+      "code": 1850,
+      "from": "STATELESS",
+      "to": "CLIENT",
+      "allowedRoles": []
+    },
+    {
+      "type": "PREMIUM_SERVICE_NOTIFICATION_AUTO_ESPIONAGE_PERFORMED",
+      "code": 1851,
+      "from": "STATELESS",
+      "to": "CLIENT",
+      "allowedRoles": []
+    },
+    {
+      "type": "PROCESS_DEUTERIUM_INCOME",
+      "code": 1970,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "PAYMENT"
+      ]
+    },
+    {
+      "type": "AUCTION_OUTBID_NOTIFICATION",
+      "code": 1982,
+      "from": "STATELESS",
+      "to": "CLIENT",
+      "allowedRoles": []
+    },
+    {
+      "type": "AUCTION_WIN_NOTIFICATION",
+      "code": 1983,
+      "from": "STATELESS",
+      "to": "CLIENT",
+      "allowedRoles": []
+    },
+    {
+      "type": "SCIENCE_NOTIFICATION_COMPLETE_RESEARCH",
+      "code": 1999,
+      "from": "STATELESS",
+      "to": "CLIENT",
+      "allowedRoles": []
+    },
+    {
+      "type": "START_BATTLE_ON_CLIENT",
+      "code": 2001,
+      "from": "STATEFUL",
+      "to": "CLIENT",
+      "allowedRoles": []
+    },
+    {
+      "type": "START_BATTLE_ON_STATEFUL",
+      "code": 2002,
+      "from": "STATELESS",
+      "to": "STATEFUL",
+      "allowedRoles": []
+    },
+    {
+      "type": "BATTLE_SEND_EVENT",
+      "code": 2010,
+      "from": "STATEFUL",
+      "to": "CLIENT",
+      "allowedRoles": []
+    },
+    {
+      "type": "TEAM_BATTLE_DISBAND",
+      "code": 2012,
+      "from": "STATEFUL",
+      "to": "CLIENT",
+      "allowedRoles": []
+    },
+    {
+      "type": "JOIN_SHIPS_TO_BATTLE",
+      "code": 2017,
+      "from": "STATELESS",
+      "to": "STATEFUL",
+      "allowedRoles": []
+    },
+    {
+      "type": "SYNC_BATTLE_START",
+      "code": 2020,
+      "from": "STATEFUL",
+      "to": "CLIENT",
+      "allowedRoles": []
+    },
+    {
+      "type": "BATTLE_CALCULATE_RESULT_ON_FINISH",
+      "code": 2108,
+      "from": "STATEFUL",
+      "to": "STATELESS",
+      "allowedRoles": []
+    },
+    {
+      "type": "BATTLE_POPULATE_RESUT_ON_CALCULATION_COMPLETE",
+      "code": 2120,
+      "from": "STATELESS",
+      "to": "STATELESS",
+      "allowedRoles": []
+    },
+    {
+      "type": "INFORM_PLAYERS_WITH_FINISHED_BATTLE_RESULT",
+      "code": 2118,
+      "from": "STATELESS",
+      "to": "CLIENT",
+      "allowedRoles": []
+    },
+    {
+      "type": "BATTLE_FINISHED_FOR_ONE_MEMBER",
+      "code": 2119,
+      "from": "STATEFUL",
+      "to": "STATELESS",
+      "allowedRoles": []
+    },
+    {
+      "type": "BATTLE_TEAM_INVITE_NOTIFICATION",
+      "code": 2130,
+      "from": "STATELESS",
+      "to": "CLIENT",
+      "allowedRoles": []
+    },
+    {
+      "type": "BATTLE_INVITE_NOTIFICATION",
+      "code": 2132,
+      "from": "STATELESS",
+      "to": "CLIENT",
+      "allowedRoles": []
+    },
+    {
+      "type": "QUEST_EXTERNAL_INVITE_AWARD_ACTIVATE",
+      "code": 3017,
+      "from": "LOGIN",
+      "to": "STATELESS",
+      "allowedRoles": []
+    },
+    {
+      "type": "EVENT_NOTIFICATION",
+      "code": 6003,
+      "from": "STATELESS",
+      "to": "CLIENT",
+      "allowedRoles": []
+    },
+    {
+      "type": "NOTIFY_STATELESS_CHANGED_CLIENT_ROLE",
+      "code": 8000,
+      "from": "LOGIN",
+      "to": "STATELESS",
+      "allowedRoles": []
+    },
+    {
+      "type": "BATCH_RECREATE_USERS_WITH_NAME_AND_EMAIL",
+      "code": 10110,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER_CREATOR"
+      ]
+    },
+    {
+      "type": "BISBOG_EMAIL_SENDING",
+      "code": 10200,
+      "from": "STATELESS",
+      "to": "LOGIN",
+      "allowedRoles": []
+    },
+    {
+      "type": "CHAT_USER_INFO",
+      "code": 7004,
+      "from": "STATELESS",
+      "to": "CHAT",
+      "allowedRoles": []
+    },
+    {
+      "type": "STATELESS_BROADCAST_TO_ALL_ACTIVE_MODULES_BY_TYPE",
+      "code": 5020,
+      "from": "STATELESS",
+      "to": "BALANCER",
+      "allowedRoles": []
+    },
+    {
+      "type": "STATEFUL_BROADCAST_TO_ALL_ONLINE_USERS",
+      "code": 5011,
+      "from": "STATEFUL",
+      "to": "BALANCER",
+      "allowedRoles": []
+    },
+    {
+      "type": "BALANCER_BROADCAST_TO_ALL_ONLINE_USERS",
+      "code": 5012,
+      "from": "BALANCER",
+      "to": "BALANCER",
+      "allowedRoles": []
+    },
+    {
+      "type": "CHAT_BROADCAST_TO_ALL_ONLINE_USERS",
+      "code": 5013,
+      "from": "CHAT",
+      "to": "BALANCER",
+      "allowedRoles": []
+    },
+    {
+      "type": "BALANCER_BROADCAST_TO_ALL_ACTIVE_MODULES_BY_TYPE",
+      "code": 5021,
+      "from": "BALANCER",
+      "to": "BALANCER",
+      "allowedRoles": []
+    },
+    {
+      "type": "STATELESS_BROADCAST_TO_ALL_ONLINE_USERS",
+      "code": 5010,
+      "from": "STATELESS",
+      "to": "BALANCER",
+      "allowedRoles": []
+    },
+    {
+      "type": "STATELESS_BROADCAST_TO_POINTED_USERS",
+      "code": 5000,
+      "from": "STATELESS",
+      "to": "BALANCER",
+      "allowedRoles": []
+    },
+    {
+      "type": "STATEFUL_BROADCAST_TO_POINTED_USERS",
+      "code": 5001,
+      "from": "STATEFUL",
+      "to": "BALANCER",
+      "allowedRoles": []
+    },
+    {
+      "type": "BALANCER_BROADCAST_TO_POINTED_USERS",
+      "code": 5002,
+      "from": "BALANCER",
+      "to": "BALANCER",
+      "allowedRoles": []
+    },
+    {
+      "type": "CHAT_BROADCAST_TO_POINTED_USERS",
+      "code": 5003,
+      "from": "CHAT",
+      "to": "BALANCER",
+      "allowedRoles": []
+    },
+    {
+      "type": "QUEST_CHANGE_NOTIFICATION",
+      "code": 3005,
+      "from": "STATELESS",
+      "to": "CLIENT",
+      "allowedRoles": []
+    },
+    {
+      "type": "OORT_NOTIFICATION_CHANGE_CLOUD",
+      "code": 2630,
+      "from": "STATELESS",
+      "to": "CLIENT",
+      "allowedRoles": []
+    },
+    {
+      "type": "TRADE_NOTIFICATION_SALE",
+      "code": 2320,
+      "from": "STATELESS",
+      "to": "CLIENT",
+      "allowedRoles": []
+    },
+    {
+      "type": "TRADE_NOTIFICATION_AUTO_PHURCHASE",
+      "code": 2321,
+      "from": "STATELESS",
+      "to": "CLIENT",
+      "allowedRoles": []
+    },
+    {
+      "type": "BATTLE_RETURN_GENERAL_TO_STATEFUL",
+      "code": 2031,
+      "from": "STATELESS",
+      "to": "STATEFUL",
+      "allowedRoles": []
+    },
+    {
+      "type": "RECALCULATE_POINTED_USER",
+      "code": 10135,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "SUPPORTER",
+        "MAIN_GAME_MASTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "PREMIUM_SERVICE_ALL_SUSPEND_FOR_POINTED_USER",
+      "code": 1890,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "ADMINISTRATION",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER"
+      ]
+    },
+    {
+      "type": "CHAT_LOCK",
+      "code": 7005,
+      "from": "CLIENT",
+      "to": "CHAT",
+      "allowedRoles": [
+        "GAME_MASTER",
+        "MAIN_GAME_MASTER",
+        "CHAT_MODERATOR",
+        "SUPPORTER",
+        "ADMINISTRATION"
+      ]
+    },
+    {
+      "type": "REMOVE_ALL_INTERACTIVE_MISSIONS_FROM_GAMER",
+      "code": 10100,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAME_MASTER",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION"
+      ]
+    },
+    {
+      "type": "ONLINE_USERS_GET",
+      "code": 130,
+      "from": "CLIENT",
+      "to": "BALANCER",
+      "allowedRoles": [
+        "GAME_MASTER",
+        "GAME_MODERATOR",
+        "GAMER_CREATOR",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "CHAT_MODERATOR",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "GET_USER_ID_BY_ITS_AUTH_TYPE_AND_ID",
+      "code": 46,
+      "from": "CLIENT",
+      "to": "LOGIN",
+      "allowedRoles": [
+        "PAYMENT",
+        "GAMER_CREATOR",
+        "ADMINISTRATION",
+        "SUPPORTER"
+      ]
+    },
+    {
+      "type": "GET_USER_NAME_BY_ITS_ID",
+      "code": 47,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "PAYMENT",
+        "ADMINISTRATION",
+        "SUPPORTER"
+      ]
+    },
+    {
+      "type": "UPDATE_USER_ROLE",
+      "code": 14,
+      "from": "CLIENT",
+      "to": "LOGIN",
+      "allowedRoles": [
+        "GAMER_CREATOR",
+        "ADMINISTRATION"
+      ]
+    },
+    {
+      "type": "DELETE_USER_DATA",
+      "code": 7,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAME_MASTER",
+        "ADMINISTRATION"
+      ]
+    },
+    {
+      "type": "ERASE_USER_DATA",
+      "code": 1024,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "ADMINISTRATION"
+      ]
+    },
+    {
+      "type": "SWITCH_TO_USER_BY_ITS_LOGIN",
+      "code": 80,
+      "from": "CLIENT",
+      "to": "LOGIN",
+      "allowedRoles": [
+        "GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION"
+      ]
+    },
+    {
+      "type": "SWITCH_TO_USER_BY_ITS_NAME",
+      "code": 81,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "COMPLETE_ALL_CONSTRUCTIONS",
+      "code": 1022,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "COMPLETE_ALL_PRODUCINGS",
+      "code": 1072,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "FAKE_HANGAR_SET_WEAPON",
+      "code": 11012,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "TESTER",
+        "ADMINISTRATION"
+      ]
+    },
+    {
+      "type": "SET_INTERACTING_FAKE_DATA",
+      "code": 1060,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "TESTER",
+        "ADMINISTRATION"
+      ]
+    },
+    {
+      "type": "PRIVELEGED_GET_DETAILED_INFO",
+      "code": 1021,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION"
+      ]
+    },
+    {
+      "type": "SHOP_UPDATE_ALL_TABS",
+      "code": 1058,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "TESTER",
+        "ADMINISTRATION"
+      ]
+    },
+    {
+      "type": "MISSION_FAKE_SET",
+      "code": 1320,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "TESTER",
+        "ADMINISTRATION"
+      ]
+    },
+    {
+      "type": "MISSION_ERASE_INTERACTION",
+      "code": 1321,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "GAME_MASTER",
+        "TESTER",
+        "ADMINISTRATION"
+      ]
+    },
+    {
+      "type": "MISSION_TELEPORT",
+      "code": 1322,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "TESTER",
+        "ADMINISTRATION"
+      ]
+    },
+    {
+      "type": "MISSION_CREATE_PIRATE_RAID_ON_USER",
+      "code": 1333,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAME_MASTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "MISSION_CREATE_ROBBERY_FROM_ALIEN",
+      "code": 1343,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "TESTER",
+        "ADMINISTRATION"
+      ]
+    },
+    {
+      "type": "MISSION_RELEASE_LORD",
+      "code": 1346,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAME_MASTER",
+        "TESTER",
+        "SUPPORTER",
+        "ADMINISTRATION"
+      ]
+    },
+    {
+      "type": "INTERNAL_MAIL_SEND_FROM_ADMINISTRATION",
+      "code": 1513,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "TESTER",
+        "ADMINISTRATION",
+        "SUPPORTER"
+      ]
+    },
+    {
+      "type": "INTERNAL_MAIL_BATCH_SEND_FROM_ADMINISTRATION",
+      "code": 1515,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "TESTER",
+        "ADMINISTRATION",
+        "SUPPORTER"
+      ]
+    },
+    {
+      "type": "DIPLOMACY_FAKE_SET",
+      "code": 1741,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "TESTER",
+        "ADMINISTRATION"
+      ]
+    },
+    {
+      "type": "FAKE_USER_INSPECTION_DATA",
+      "code": 1744,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "PROMOCODE_SAVE_NEW",
+      "code": 1972,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "PAYMENT",
+        "ADMINISTRATION"
+      ]
+    },
+    {
+      "type": "PROMOCODE_CHANGE_STATE",
+      "code": 1973,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "PAYMENT",
+        "ADMINISTRATION"
+      ]
+    },
+    {
+      "type": "KILL_MYSELF",
+      "code": 2022,
+      "from": "CLIENT",
+      "to": "STATEFUL",
+      "allowedRoles": [
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "TRADE_FAKE_SET",
+      "code": 2308,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAME_MASTER",
+        "TESTER",
+        "ADMINISTRATION"
+      ]
+    },
+    {
+      "type": "TELEPORT_BASE",
+      "code": 2603,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAME_MODERATOR",
+        "GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "OORT_CREATE_ALIEN_ASTEROID",
+      "code": 2612,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "OORT_CREATE_EMPTY_ASTEROID",
+      "code": 2613,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "STARBASE_COMPLETE_REPAIRING",
+      "code": 2822,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAME_MASTER",
+        "TESTER",
+        "ADMINISTRATION"
+      ]
+    },
+    {
+      "type": "STARBASE_DAMAGE_CANNON",
+      "code": 2823,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAME_MASTER",
+        "TESTER",
+        "ADMINISTRATION"
+      ]
+    },
+    {
+      "type": "STARBASE_DAMAGE_RADAR_SLOT",
+      "code": 2824,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAME_MASTER",
+        "TESTER",
+        "ADMINISTRATION"
+      ]
+    },
+    {
+      "type": "STARBASE_COMPLETE_SWITCHING_STATE",
+      "code": 2812,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "PRIVILEGED_INVENTORY_ADD_IDENTIFIABLE",
+      "code": 2901,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "FAKE_QUEST_SET_STATE",
+      "code": 3003,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "FAKE_QUEST_NEW_ACTIVATE",
+      "code": 3010,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "QUEST_NEW_ACTIVATE_FOR_POINTED_USER",
+      "code": 3015,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "PAYMENT"
+      ]
+    },
+    {
+      "type": "FAKE_QUEST_DEBUG",
+      "code": 3011,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "ADMINISTRATION",
+        "GAMER",
+        "SUPPORTER",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "FAKE_QUEST_RESTART_FAILED",
+      "code": 3008,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "ADMINISTRATION",
+        "SUPPORTER"
+      ]
+    },
+    {
+      "type": "FAKE_QUESTS_GET_FOR_POINTED_USER",
+      "code": 3009,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "ADMINISTRATION",
+        "SUPPORTER",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "PRIVILEGED_QUESTS_GET_ACTIVE_BY_STATE_FOR_POINTED_USER",
+      "code": 3013,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "ADMINISTRATION",
+        "TESTER",
+        "SUPPORTER"
+      ]
+    },
+    {
+      "type": "DAILY_GIFT_REACTIVATE",
+      "code": 3104,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAME_MASTER",
+        "TESTER",
+        "ADMINISTRATION"
+      ]
+    },
+    {
+      "type": "FAKE_SET_LORD_LEVEL",
+      "code": 4900,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAME_MASTER",
+        "TESTER",
+        "ADMINISTRATION"
+      ]
+    },
+    {
+      "type": "FAKE_COMPLETE_SCIENCE_LEARNING",
+      "code": 4901,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAME_MASTER",
+        "TESTER",
+        "ADMINISTRATION"
+      ]
+    },
+    {
+      "type": "PRIVILEGED_SCIENCE_RECURSIVE_SET",
+      "code": 4902,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAME_MASTER",
+        "TESTER",
+        "ADMINISTRATION"
+      ]
+    },
+    {
+      "type": "FAKE_SET_DATA",
+      "code": 4903,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAME_MASTER",
+        "TESTER",
+        "ADMINISTRATION"
+      ]
+    },
+    {
+      "type": "FAKE_SET_RESOURCES",
+      "code": 4904,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "TESTER",
+        "ADMINISTRATION"
+      ]
+    },
+    {
+      "type": "FAKE_SET_NEW_BASE",
+      "code": 4905,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAME_MASTER",
+        "TESTER",
+        "ADMINISTRATION"
+      ]
+    },
+    {
+      "type": "FAKE_SET_DATA_PUBLISHERS",
+      "code": 4906,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAME_MASTER",
+        "TESTER",
+        "ADMINISTRATION"
+      ]
+    },
+    {
+      "type": "FAKE_REMOVE_LORD_FROM_BATTLE_ACTION",
+      "code": 4907,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "FAKE_SET_NEW_DEFINITE_BASE",
+      "code": 4908,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAME_MASTER",
+        "TESTER",
+        "ADMINISTRATION"
+      ]
+    },
+    {
+      "type": "FAKE_COMPLETE_ONE_CURRENTLY_LEARNING_SCIENCE",
+      "code": 4909,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAME_MASTER",
+        "TESTER",
+        "ADMINISTRATION"
+      ]
+    },
+    {
+      "type": "FAKE_USER_TO_ARCHIVE",
+      "code": 4910,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAME_MASTER",
+        "GAMER_CREATOR",
+        "ADMINISTRATION",
+        "SUPPORTER"
+      ]
+    },
+    {
+      "type": "EVENT_SET_FAKE",
+      "code": 6002,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAME_MASTER",
+        "TESTER",
+        "ADMINISTRATION"
+      ]
+    },
+    {
+      "type": "PUSH_MESSAGE_SEND",
+      "code": 7102,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "ADMINISTRATION",
+        "SUPPORTER"
+      ]
+    },
+    {
+      "type": "REMOVE_ALL_STANDALONE_MISSIONS_FROM_GAMER",
+      "code": 10101,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION"
+      ]
+    },
+    {
+      "type": "REMOVE_POINTED_INTERACTIVE_MISSION_FROM_GAMER",
+      "code": 10102,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION"
+      ]
+    },
+    {
+      "type": "REMOVE_POINTED_STANDALONE_MISSION_FROM_GAMER",
+      "code": 10103,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION"
+      ]
+    },
+    {
+      "type": "FLUSH_POINTED_ALIEN",
+      "code": 10115,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAME_MASTER",
+		"MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION"
+      ]
+    },
+    {
+      "type": "RETURN_USER_GENERAL_STUCKED_IN_BATTLE",
+      "code": 10105,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION"
+      ]
+    },
+    {
+      "type": "TRANSFER_TRITIUM_BETWEEN_BASKET",
+      "code": 10107,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "ADMINISTRATION"
+      ]
+    },
+    {
+      "type": "SET_RESOURCES_FOR_POINTED_USER",
+      "code": 10108,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "ADMINISTRATION"
+      ]
+    },
+    {
+      "type": "ADD_RESOURCES_FOR_POINTED_USER",
+      "code": 10111,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "ADMINISTRATION"
+      ]
+    },
+    {
+      "type": "TRITIUM_BASKET_GET_STATE",
+      "code": 10109,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "ADMINISTRATION",
+        "PAYMENT"
+      ]
+    },
+    {
+      "type": "WITHDRAW_BOOKED_TRITIUM",
+      "code": 1977,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "ADMINISTRATION"
+      ]
+    },
+    {
+      "type": "CANCEL_BOOKED_TRITIUM",
+      "code": 1978,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "ADMINISTRATION"
+      ]
+    },
+    {
+      "type": "BOOK_TRITIUM",
+      "code": 1975,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "RETURN_BOOKED_TRITIUM",
+      "code": 1976,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "BATTLE_JOIN_IN_VIEW_MODE",
+      "code": 2024,
+      "from": "CLIENT",
+      "to": "STATEFUL",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "PREMIUM_SERVICE_DEACTIVATE",
+      "code": 1823,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "LIST_AUTH_TYPES_PER_USER",
+      "code": 37,
+      "from": "CLIENT",
+      "to": "LOGIN",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "SET_ONCE_LOGIN_AND_PASSWORD",
+      "code": 38,
+      "from": "CLIENT",
+      "to": "LOGIN",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "SET_ONCE_FACEBOOK_ID",
+      "code": 39,
+      "from": "CLIENT",
+      "to": "LOGIN",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "SET_ONCE_TWITTER_ID",
+      "code": 40,
+      "from": "CLIENT",
+      "to": "LOGIN",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "SET_ONCE_APPLE_GAMECENTER_ID",
+      "code": 43,
+      "from": "CLIENT",
+      "to": "LOGIN",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "RESET_EXTERNAL_ID_LINK",
+      "code": 44,
+      "from": "CLIENT",
+      "to": "LOGIN",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "CHANGE_USER_PASSWORD",
+      "code": 1,
+      "from": "CLIENT",
+      "to": "LOGIN",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "PROFILE_CHANGE_PASSWORD_NOTIFICATION",
+      "code": 2,
+      "from": "LOGIN",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CONFIGURATOR",
+        "PAYMENT",
+        "GAMER_CREATOR",
+        "CHARGER",
+        "GAME_MASTER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "POST_LOGIN_USER_STRUCTURES_CREATION",
+      "code": 9,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "GET_CONTANCT_LIST_WITH_EXTERNAL_IDS",
+      "code": 27,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "NOTIFY_CONTANCT_LIST_WITH_EXTERNAL_IDS",
+      "code": 29,
+      "from": "LOGIN",
+      "to": "CLIENT",
+      "allowedRoles": [
+        "GAMER",
+        "CONFIGURATOR",
+        "PAYMENT",
+        "GAMER_CREATOR",
+        "CHARGER",
+        "GAME_MASTER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "SAVE_EXTERNAL_INVITE",
+      "code": 28,
+      "from": "CLIENT",
+      "to": "LOGIN",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "CLIENT_HEARTBEAT",
+      "code": 6,
+      "from": "CLIENT",
+      "to": "BALANCER",
+      "allowedRoles": [
+        "GAMER",
+        "CONFIGURATOR",
+        "PAYMENT",
+        "GAMER_CREATOR",
+        "CHARGER",
+        "GAME_MASTER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER",
+        "NOT_AUTHORIZED"
+      ]
+    },
+    {
+      "type": "LOAD_ALL_BUFFS",
+      "code": 900,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "BASE_TRANSPORT_RESOURCES",
+      "code": 910,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "CHANGE_ASTEROID_TYPE",
+      "code": 911,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "CHANGE_ASTEROID_NAME",
+      "code": 912,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "BASE_EXTEND_LIFE_TIME",
+      "code": 913,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "BASE_REJECT",
+      "code": 915,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "BASE_GET_TRANSPORTATION_TAX",
+      "code": 914,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "BASE_GET_RESOURCES_TEMPORARY",
+      "code": 920,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "LOAD_BASES_DATA",
+      "code": 1000,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "LOAD_BASE_RESOURCES",
+      "code": 1003,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "SALVAGE_BUILDING",
+      "code": 1001,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "BUILD_BUILDING",
+      "code": 1002,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "PRIVILEGED_BUILDING_SET",
+      "code": 1070,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "QUEUED_BUILD_BUILDING",
+      "code": 11002,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "DESTROY_BUILDING",
+      "code": 1004,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "DOWNGRADE_BUILDING",
+      "code": 1006,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "UPGRADE_BUILDING",
+      "code": 1007,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "QUEUED_UPGRADE_BUILDING",
+      "code": 11007,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "MOVE_BUILDING",
+      "code": 1015,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "CHANGE_BRANCH_BUILDING",
+      "code": 1014,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "PAUSE_RESUME_BUILDING",
+      "code": 1010,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "CHANGE_BUILDING_QUEUE",
+      "code": 1008,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "PRODUCE",
+      "code": 1005,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "PAUSE_RESUME_CONVEYOR",
+      "code": 1009,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "CANCEL_CONVEYOR",
+      "code": 1011,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "COMPLETE_ONE_CONSTRUCTION",
+      "code": 1018,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "COMPLETE_ONE_PRODUCING",
+      "code": 1068,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "HANGAR_SET_WEAPON",
+      "code": 1012,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "HANGAR_SET_WEAPONS",
+      "code": 1074,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "HANGAR_UNSET_WEAPON",
+      "code": 1013,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "HANGAR_EQUIP_ACTION",
+      "code": 1075,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "HANGAR_UNSET_SHIP_BOTS",
+      "code": 1016,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "HANGAR_BUY_PREMIUM_SHIP",
+      "code": 1061,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "HANGAR_HIRE_GENERAL",
+      "code": 1062,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "HANGAR_FIRE_GENERAL",
+      "code": 1065,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "HANGAR_DISMISS_GENERAL",
+      "code": 1063,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "HANGAR_GENERAL_SKILLS_RESET",
+      "code": 1064,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "HANGAR_GET",
+      "code": 1023,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "HANGAR_LEARN_LORD_SKILL",
+      "code": 1025,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "HANGAR_GET_OFFICERS",
+      "code": 1026,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "HANGAR_SET_OFFICER",
+      "code": 1027,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "HANGAR_GET_SHIP",
+      "code": 1028,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "HANGAR_GET_STORE",
+      "code": 1029,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "HANGAR_SET_SHIP_BOTS",
+      "code": 1031,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "HANGAR_GET_ARTIFACTS",
+      "code": 1032,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "HANGAR_SET_ARTIFACT",
+      "code": 1033,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "HANGAR_GET_IMPROVES",
+      "code": 1034,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "HANGAR_SET_IMPROVE",
+      "code": 1035,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "HANGAR_UNSET_ARTIFACT",
+      "code": 1037,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "HANGAR_UNSET_OFFICER",
+      "code": 1038,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "HANGAR_STOP_TRAINING",
+      "code": 1040,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "HANGAR_START_TRAINING",
+      "code": 1041,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "HANGAR_APPLY_CONTRACT_STORE",
+      "code": 1042,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "HANGAR_APPLY_CONTRACT_LORD",
+      "code": 1043,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "HANGAR_CHANGE_LORD_NAME",
+      "code": 1044,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "SHOP_GET",
+      "code": 1045,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "SHOP_GET_IMPROVES",
+      "code": 1046,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "SHOP_GET_BASICS",
+      "code": 1047,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "SHOP_GET_UNIQUE",
+      "code": 1048,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "SHOP_ASTEROID_GET",
+      "code": 1049,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "SHOP_STORE_GET",
+      "code": 1050,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "SHOP_BUY",
+      "code": 1054,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "SHOP_SELL",
+      "code": 1056,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "SHOP_UPDATE",
+      "code": 1057,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "MISSION_GET_ALL",
+      "code": 1300,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "MISSION_CANCEL",
+      "code": 1301,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "MISSION_REMOVE",
+      "code": 1302,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "MISSION_GET_TRAVELLING_TIME",
+      "code": 1303,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "MISSION_GET",
+      "code": 1305,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "MISSION_CREATE_ESPIONAGE",
+      "code": 1330,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "MISSION_CREATE_PIRATE_RAID",
+      "code": 1331,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "MISSION_CREATE_ROBBERY",
+      "code": 1332,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "MISSION_CREATE_EXPLORATION",
+      "code": 1334,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "MISSION_CREATE_CYBORGS_TRANSPORTATION",
+      "code": 1335,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "MISSION_CREATE_SPIES_EVACUATION",
+      "code": 1336,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "MISSION_KILL_SPIES",
+      "code": 1356,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "MISSION_CREATE_LORDS_RELOCATION",
+      "code": 1337,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "MISSION_CREATE_ATTACK_ASSISTANCE",
+      "code": 1338,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "MISSION_CREATE_SUPPORT",
+      "code": 1339,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "MISSION_CREATE_CAPTURE",
+      "code": 1340,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "MISSION_CREATE_CAPTURE_EMPTY_ASTEROID",
+      "code": 1341,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "MISSION_CREATE_COUNTER_ESPIONAGE_ON_ALLY",
+      "code": 1342,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "MISSION_CREATE_ESPIONAGE_OUT_OF_RADAR_RANGE",
+      "code": 1344,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "MISSION_BANISH_SUPPORTING_LORD",
+      "code": 1345,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "MISSION_JOIN_BATTLE",
+      "code": 1370,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "MISSION_GET_LORDS_INVOLVED_IN_BATTLE",
+      "code": 1372,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "GET_CURRENT_USER_IN_RATING",
+      "code": 1400,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "GET_POINTED_USER_IN_RATING",
+      "code": 1401,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "GET_RATING_RANGE",
+      "code": 1402,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "INTERNAL_MAIL_GET_STORAGE",
+      "code": 1500,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "INTERNAL_MAIL_GET_BOX_CONTENT",
+      "code": 1501,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "INTERNAL_MAIL_SEND",
+      "code": 1502,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "INTERNAL_MAIL_SEND_CLAIM",
+      "code": 1503,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "INTERNAL_MAIL_ARCHIVE",
+      "code": 1505,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "INTERNAL_MAIL_DELETE",
+      "code": 1506,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "INTERNAL_MAIL_ADD_CONTACTS",
+      "code": 1507,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "INTERNAL_MAIL_DELETE_CONTACT",
+      "code": 1508,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "INTERNAL_MAIL_SET_CHECKED",
+      "code": 1510,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "INTERNAL_MAIL_SEND_TO_ADMINISTRATION",
+      "code": 1512,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "INTERNAL_MAIL_GET_UNREAD_LETTERS_NUMBER",
+      "code": 1514,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "PROFILE_GET_PERSONAL_DATA",
+      "code": 1600,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "PROFILE_CHANGE_NAME",
+      "code": 1601,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "PROFILE_CHANGE_AVATAR",
+      "code": 1602,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "PROFILE_CHANGE_EMAIL",
+      "code": 1603,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "PROFILE_GET",
+      "code": 1604,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "PROFILE_OTHER_USER_GET",
+      "code": 1610,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "PROFILE_OTHER_USER_INSPECT",
+      "code": 1611,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "PROFILE_GET_AVATARS",
+      "code": 1612,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "PROFILE_SEND_GIFT",
+      "code": 1613,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "PROFILE_FIND_USER_NAMES_BY_PATTERN",
+      "code": 1614,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "BATTLE_REPEATS_GET",
+      "code": 1630,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "BATTLE_REPEAT_GET",
+      "code": 1634,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "BATTLE_REPEAT_SAVE",
+      "code": 1631,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "BATTLE_REPEAT_DELETE",
+      "code": 1632,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "UNION_CREATE_OFFER",
+      "code": 1701,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "UNION_CANCEL_OFFER",
+      "code": 1704,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "UNION_RESPOND_TO_OFFER",
+      "code": 1702,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "UNION_BREAK",
+      "code": 1703,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "CLAN_CREATE",
+      "code": 1720,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "CLAN_DISMISSAL",
+      "code": 1721,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "CLAN_RENAME",
+      "code": 1722,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "CLAN_BUY_SKILL",
+      "code": 1723,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "CLAN_INVITE",
+      "code": 1725,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "CLAN_INVITE_ACCEPT",
+      "code": 1726,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "CLAN_INVITE_REJECT",
+      "code": 1727,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "CLAN_INVITE_WITHDRAW",
+      "code": 1728,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "CLAN_MEMBER_EXPEL",
+      "code": 1730,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "CLAN_MEMBER_LEAVE",
+      "code": 1731,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "CLAN_CHANGE_ROLE",
+      "code": 1732,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "DIPLOMACY_GET",
+      "code": 1740,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "DIPLOMACY_GET_USER_INSPECTION_DATA",
+      "code": 1742,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "DIPLOMACY_GET_ALIEN_INSPECTION_DATA",
+      "code": 1743,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "DIPLOMACY_NOTIFICATION_CHANGE",
+      "code": 1760,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "GAME_MASTER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "ASTEROID_MOVED_NOTIFICATION",
+      "code": 2650,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "GAME_MASTER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "ESPIONAGE_BANISH_ENEMY_SPIES",
+      "code": 1770,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "ESPIONAGE_START_SABOTAGE",
+      "code": 1771,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "ESPIONAGE_GET_COUNTER_ESPIONAGE_TARGET",
+      "code": 1772,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "ESPIONAGE_BREAK_LINK_WITH_ENEMY",
+      "code": 1773,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "GET_CASH_INFO",
+      "code": 1800,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "PREMIUM_SERVICE_ACTIVATE",
+      "code": 1820,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "PREMIUM_SERVICE_CHANGE_AUTO_PROLONG_STATE",
+      "code": 1821,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "PREMIUM_SERVICE_CHANGE_SUSPEND_STATE",
+      "code": 1822,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "PREMIUM_SERVICE_GET_CURRENT",
+      "code": 1824,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "PREMIUM_SERVICE_PROLONG",
+      "code": 1825,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "PREMIUM_SERVICE_PUSH_ACTIVATION",
+      "code": 1826,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "PREMIUM_SERVICE_AUTO_EXPLORATION_PILOTS_CHANGE",
+      "code": 1827,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "PREMIUM_SERVICE_AUTO_ESPIONAGE_SPIES_CHANGE",
+      "code": 1828,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "PROCESS_TRITIUM_EXCHANGE_TO_DEUTERIUM",
+      "code": 1971,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "PROMOCODE_ACTIVATE",
+      "code": 1974,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "GAME_MASTER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "AUCTION_GET",
+      "code": 1980,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "AUCTION_BID",
+      "code": 1981,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "SCIENCE_HAS_ACTIVE_RESEARCH",
+      "code": 1992,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "SCIENCE_ACTIVATE",
+      "code": 1993,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "SCIENCE_UPDATE_QUEUE",
+      "code": 1996,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "SCIENCE_SET_RESEARCH",
+      "code": 1997,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "SCIENCE_GET_STORAGE",
+      "code": 1998,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "GET_BATTLE_CONFIG",
+      "code": 2007,
+      "from": "CLIENT",
+      "to": "STATEFUL",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "GET_BATTLE_DATA",
+      "code": 2006,
+      "from": "CLIENT",
+      "to": "STATEFUL",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "BATTLE_SHOOT",
+      "code": 2003,
+      "from": "CLIENT",
+      "to": "STATEFUL",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "SET_AUTO_SHOOT",
+      "code": 2021,
+      "from": "CLIENT",
+      "to": "STATEFUL",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "RETREAT_BATTLE",
+      "code": 2023,
+      "from": "CLIENT",
+      "to": "STATEFUL",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "BATTLE_SWITCH_LORD",
+      "code": 2009,
+      "from": "CLIENT",
+      "to": "STATEFUL",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "BATTLE_FIGHT_EXIT",
+      "code": 2005,
+      "from": "CLIENT",
+      "to": "STATEFUL",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "SET_BOT_STATUS",
+      "code": 2013,
+      "from": "CLIENT",
+      "to": "STATEFUL",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "RESPAWN_AGREE",
+      "code": 2014,
+      "from": "CLIENT",
+      "to": "STATEFUL",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "LEAVE_SHIP_IN_BATTLE_AND_STAY",
+      "code": 2015,
+      "from": "CLIENT",
+      "to": "STATEFUL",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "GET_SHIP_FROM_BATTLE",
+      "code": 2016,
+      "from": "CLIENT",
+      "to": "STATEFUL",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "BATTLE_SYNC",
+      "code": 2004,
+      "from": "CLIENT",
+      "to": "STATEFUL",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "LEARNING_FREEZE",
+      "code": 2018,
+      "from": "CLIENT",
+      "to": "STATEFUL",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "SYNC_BATTLE",
+      "code": 2019,
+      "from": "CLIENT",
+      "to": "STATEFUL",
+      "allowedRoles": [
+        "GAMER",
+        "GAME_MASTER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "BATTLE_GET_CURRENT",
+      "code": 2102,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "BATTLE_TEAM_CREATE",
+      "code": 2103,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "BATTLE_SINGLE_CREATE",
+      "code": 2153,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "BATTLE_JOIN",
+      "code": 2104,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "BATTLE_LEAVE",
+      "code": 2105,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "BATTLE_GENERAL_READY",
+      "code": 2106,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "BATTLE_RETURN_GENERAL_FROM_CLIENT",
+      "code": 2030,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER",
+        "ADMINISTRATION"
+      ]
+    },
+    {
+      "type": "BATTLE_GET",
+      "code": 2107,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "ARENA_GET_GENERALS",
+      "code": 2110,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "BATTLE_TEAM_KICK_USER",
+      "code": 2111,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "BATTLE_TEAM_JOIN",
+      "code": 2112,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "BATTLE_TEAM_READY",
+      "code": 2113,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "BATTLE_SINGLE_READY",
+      "code": 2163,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "BATTLE_TEAM_LEAVE",
+      "code": 2114,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "BATTLE_SINGLE_LEAVE",
+      "code": 2164,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "BATTLE_TEAM_UNREADY",
+      "code": 2115,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "BATTLE_GENERAL_UNREADY",
+      "code": 2116,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "BATTLE_TEAM_GET",
+      "code": 2117,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "BATTLE_SINGLE_GET",
+      "code": 2167,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "BATTLE_KICK_USER",
+      "code": 2121,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "GAME_MASTER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "BATTLE_TEAM_IMMEDIATE_START",
+      "code": 2122,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "BATTLE_SINGLE_IMMEDIATE_START",
+      "code": 2172,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "BATTLE_TEAM_CHANGE_REQUIREMENTS",
+      "code": 2123,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "BATTLE_SINGLE_CHANGE_REQUIREMENTS",
+      "code": 2173,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "BATTLE_TEAM_INVITE",
+      "code": 2129,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "BATTLE_INVITE",
+      "code": 2131,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "BATTLE_START_MORE_ACTION",
+      "code": 2197,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "BATTLE_START_TUTORIAL_TRAINING",
+      "code": 2199,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "BATTLE_START_DEMO_ACTION",
+      "code": 2195,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "BATTLE_CREATE_FROM_CARD",
+      "code": 2198,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "BATTLE_CREATE_FROM_QUEST",
+      "code": 2196,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "DISCONNECT_USER",
+      "code": 2200,
+      "from": "CLIENT",
+      "to": "BALANCER",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "DISCONNECT_USER_STATELESS",
+      "code": 2201,
+      "from": "BALANCER",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CONFIGURATOR",
+        "PAYMENT",
+        "GAMER_CREATOR",
+        "CHARGER",
+        "GAME_MASTER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "DISCONNECT_USER_STATEFUL",
+      "code": 2202,
+      "from": "BALANCER",
+      "to": "STATEFUL",
+      "allowedRoles": [
+        "GAMER",
+        "CONFIGURATOR",
+        "PAYMENT",
+        "GAMER_CREATOR",
+        "CHARGER",
+        "GAME_MASTER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "DISCONNECT_USER_LOGIN",
+      "code": 2203,
+      "from": "BALANCER",
+      "to": "LOGIN",
+      "allowedRoles": [
+        "GAMER",
+        "CONFIGURATOR",
+        "PAYMENT",
+        "GAMER_CREATOR",
+        "CHARGER",
+        "GAME_MASTER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "CHAT_DISCONNECT_USER",
+      "code": 2204,
+      "from": "BALANCER",
+      "to": "CHAT",
+      "allowedRoles": [
+        "GAMER",
+        "CONFIGURATOR",
+        "PAYMENT",
+        "GAMER_CREATOR",
+        "CHARGER",
+        "GAME_MASTER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "TRADE_GET_MARKET",
+      "code": 2300,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "TRADE_MAKE_PURCHASE",
+      "code": 2301,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "TRADE_ADD_MARKET_LOT",
+      "code": 2302,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "TRADE_CANCEL_MARKET_LOT",
+      "code": 2303,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "TRADE_INCREASE_AUTO_PHURCHASE_SLOT_LIMIT",
+      "code": 2304,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "TRADE_ADD_AUTO_PHURCHASE_SLOT",
+      "code": 2305,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "TRADE_CANCEL_AUTO_PHURCHASE_SLOT",
+      "code": 2306,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "TRADE_INCREASE_EXTRA_LOTS_QUANTITY",
+      "code": 2307,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "TRADE_GLOBAL_LOTS_UPDATE",
+      "code": 2309,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "SEND_CLIENT_ERROR_REPORT_TO_ADMIN_EMAIL",
+      "code": 2310,
+      "from": "CLIENT",
+      "to": "BALANCER",
+      "allowedRoles": [
+        "NOT_AUTHORIZED",
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "TELEPORT_RESOURCES",
+      "code": 2400,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "CREATE_MANEUVER",
+      "code": 2601,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "ACCELERATE_MANEUVER",
+      "code": 2602,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "GET_TIME_FOR_MANEUVER_TO_SPECIFIC_POINT",
+      "code": 2604,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "CREATE_MANEUVER_TO_SPECIFIC_POINT",
+      "code": 2605,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "OORT_GET_DATA",
+      "code": 2610,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "OORT_GET_OBJECTS",
+      "code": 2611,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "RADAR_GET_DYNAMIC_CONTENT",
+      "code": 2700,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "RADAR_INSPECT_SECTOR",
+      "code": 2701,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "RADAR_GET_ACTUAL_BASES_STATE",
+      "code": 2702,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "STARBASE_SET_CARD",
+      "code": 2801,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "STARBASE_UNSET_CARD",
+      "code": 2802,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "STARBASE_SET_WEAPON",
+      "code": 2803,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "STARBASE_UNSET_WEAPON",
+      "code": 2804,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "STARBASE_APPLY_CONTRACT_TO_OFFICER",
+      "code": 2805,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "STARBASE_SWITCH_STATE",
+      "code": 2810,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "STARBASE_ACCELERATE_DISABLING",
+      "code": 2811,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "STARBASE_REPAIR_CANNON",
+      "code": 2820,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "STARBASE_REPAIR_RADAR_SLOT",
+      "code": 2821,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "STARBASE_COMPLETE_REPAIRING_CANNON",
+      "code": 2825,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "STARBASE_COMPLETE_REPAIRING_RADAR_SLOT",
+      "code": 2826,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "INVENTORY_ACTIVATE_SURPRISE",
+      "code": 2900,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "QUESTS_GET",
+      "code": 3000,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "QUEST_CLAIM_REWARD",
+      "code": 3001,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "QUEST_COMPLETE",
+      "code": 3002,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "QUEST_FAIL",
+      "code": 3012,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "QUEST_CARD_ACTIVATE",
+      "code": 3004,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "QUEST_SET_VIEWED",
+      "code": 3006,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "QUESTS_PRESTARTED_CHECK",
+      "code": 3014,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "INFORM_LOGINED_EXTERNALLY",
+      "code": 3007,
+      "from": "CLIENT",
+      "to": "LOGIN",
+      "allowedRoles": [
+        "GAMER",
+        "CONFIGURATOR",
+        "PAYMENT",
+        "GAMER_CREATOR",
+        "CHARGER",
+        "GAME_MASTER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "TUTORIAL_SET_STEP",
+      "code": 3050,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "DAILY_GIFTS_TAKE_ALL",
+      "code": 3100,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "DAILY_GIFTS_ACTIVATE_NEXT_DAY",
+      "code": 3102,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "DAILY_GIFT_UPDATE_ALL_SLOTS",
+      "code": 3103,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "DAILY_GIFT_MULTIPLY",
+      "code": 3105,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "EVENT_GET",
+      "code": 6000,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "EVENT_DELETE",
+      "code": 6001,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "EVENT_SET_VIEWED",
+      "code": 6004,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "CHAT_SEND_MESSAGE",
+      "code": 7000,
+      "from": "CLIENT",
+      "to": "CHAT",
+      "allowedRoles": [
+        "GAMER",
+        "GAME_MASTER",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "CHAT_MODERATOR",
+        "SUPPORTER",
+        "TESTER",
+        "ADMINISTRATION"
+      ]
+    },
+    {
+      "type": "CHAT_PUSH_MESSAGE",
+      "code": 7001,
+      "from": "CLIENT",
+      "to": "CHAT",
+      "allowedRoles": [
+        "GAMER",
+        "GAME_MASTER",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "CHAT_MODERATOR",
+        "SUPPORTER",
+        "TESTER",
+        "ADMINISTRATION"
+      ]
+    },
+    {
+      "type": "CHAT_SUBSCRIPTION",
+      "code": 7002,
+      "from": "CLIENT",
+      "to": "CHAT",
+      "allowedRoles": [
+        "GAMER",
+        "GAME_MASTER",
+        "GAME_MODERATOR",
+        "CHAT_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "TESTER",
+        "ADMINISTRATION"
+      ]
+    },
+    {
+      "type": "CHAT_UNSUBCRIBE",
+      "code": 7003,
+      "from": "CLIENT",
+      "to": "CHAT",
+      "allowedRoles": [
+        "GAMER",
+        "GAME_MASTER",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "CHAT_MODERATOR",
+        "SUPPORTER",
+        "TESTER",
+        "ADMINISTRATION"
+      ]
+    },
+    {
+      "type": "PUSH_MESSAGE_SUBSCRIPTION",
+      "code": 7101,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "FRACTION_CHANGE",
+      "code": 1450,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "PRIVILEGED_FRACTION_CHANGE_FOR_POINTED_USER",
+      "code": 1451,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAME_MASTER",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    },
+    {
+      "type": "PROCESS_BATCH",
+      "code": 9999,
+      "from": "CLIENT",
+      "to": "STATELESS",
+      "allowedRoles": [
+        "GAMER",
+        "CHAT_MODERATOR",
+        "GAME_MODERATOR",
+        "MAIN_GAME_MASTER",
+        "SUPPORTER",
+        "ADMINISTRATION",
+        "TESTER"
+      ]
+    }
+  ]
+}
+
